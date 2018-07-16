@@ -179,9 +179,9 @@ public class ChooseAreaFragment extends Fragment {
                             if("province".equals(type)){
                                 queryProvinces();
                             }else if("city".equals(type)){
-                                queryProvinces();
+                                queryCities();
                             }else if("county".equals(type)){
-                                queryProvinces();
+                                queryCounties();
                             }
                         }
                     });
@@ -189,8 +189,6 @@ public class ChooseAreaFragment extends Fragment {
             }
         });
     }
-
-
 
     private void showProgressDialog(){
         if(progressDialog == null){
